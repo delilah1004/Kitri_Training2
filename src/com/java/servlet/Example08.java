@@ -45,9 +45,12 @@ public class Example08 extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/com/java/servlet/Example08_Sub");
 		rd.include(request, response);
 		
-		out.print("<hr colore='red' width='600px'/>");
+		out.print("<hr color = 'red' width = '600px'/>");
+		out.print("include는 다시 돌아온다. 제어권을 넘겨주지 않는다.");
 		out.print("</body>");
 		out.print("</html>");
+		
+		out.close();
 		
 	}
 

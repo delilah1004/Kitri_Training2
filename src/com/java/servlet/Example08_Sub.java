@@ -1,6 +1,8 @@
 package com.java.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +33,17 @@ public class Example08_Sub extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String message = request.getParameter("message");
 		System.out.println("Exmaple08_Sub" + message);
+		
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out = response.getWriter();
+		
+		out.print("<html>");
+		out.print("<head><title></title></head>");
+		out.print("<body>");
+		
+		out.print("<h3 style='color:blue'>" + message + "<h3/>");
+		out.print("</body>");
+		out.print("</html>");
 	}
 
 	/**
