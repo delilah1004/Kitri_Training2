@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>동위 선택자 </title>
+<style type="text/css">
+	/*
+		형제선택: 선택자 ~ 선택자 {속성:값,.....} /모든동생
+		인접한 형제선택: 선택자 + 선택자 {속성:값,.....} /바로 아래 동생
+	*/
+	
+		#title ~ div {
+			color:blue;
+		}
+		
+		#title + div{
+			color:yellow;
+		}
+	
+</style>
+</head>
+<body>
+	<div>안녕하세요.</div>
+
+	<div id="title" style="color:red; font-size: 20px;">HI</div>
+
+	<div>ONE</div>
+	<div>TWO</div>
+	<div>THREE</div>
+	<div>FOUR</div>
+	<div>FIVE</div>
+</body>
+</html>

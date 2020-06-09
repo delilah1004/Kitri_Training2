@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>필터 선택자 - 문자 블록 </title>
+	<style type="text/css">
+	/* 필터선택자 : 문자블록, 마우스(hover), 콘텐츠, 하이퍼링크(link, visited, active) 
+		
+		1. 문자블록
+			1) 선택자 : first-child{속성:값;...} : 선택자의 첫번째 자식요소를 선택
+			2) 선택자 : last-child{속성:값;...} : 선택자의 마지막 자식요소를 선택
+			3) 선택자 : nth-child(n){속성:값;...} : 선택자의 n번째 자식요소를 선택
+			4) 선택자 : first-line {속성:값;...} : 
+			5) 선택자 : first-letter {속성:값;...} : 
+			6) 선택자 : ::selection {속성:값;...} : 
+	*/
+		
+		#content {
+			width: 100px;
+		}
+		
+		#content > li {
+			list-style-type: none;
+			border: 1px solid #cccccc;
+			border-top-width: 0px;
+			background-color: #efefef;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		
+		#content a {
+			text-decoration: none;
+			color: #000000;
+			text-align: center;
+			padding: 10px;
+		}
+		
+		#content > li:first-child, #content > li:last-child {
+			background-color: yellow;
+		}
+		
+		#content > li:nth-child(2) {
+			background-color: red;
+		}
+		
+		#content > li:first-child {
+			border-radius: 10px 10px 0px 0px;
+		}
+		
+		#content > li:last-child {
+			border-radius: 0px 0px 10px 10px;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<div>
+		<ul id="content">
+			<li style="border-top-width: 1px;"><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+			<li><a href="#">MENU6</a></li>
+			<li><a href="#">MENU7</a></li>
+			<li><a href="#">MENU8</a></li>
+		</ul>
+	</div>
+</body>
+</html>

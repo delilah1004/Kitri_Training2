@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+header > #top_menu {
+	width: 1000px;
+	
+	padding-top: 5px;
+	
+	margin: 0px auto;
+	
+	overflow: hidden;
+}
+
+header > #top_menu > div {
+	float: left;
+}
+
+header > #top_menu > .top_left {
+	float: left;
+}
+
+header > #top_menu > .top_right {
+	overflow: hidden;
+	
+	float: right;
+}
+
+header > #top_menu > .top_right li {
+	float: right;
+}
+
+header > #top_menu > .top_right li > a {
+	padding: 0 2px 0 11px;
+    font-size: 12px;
+    color: #a3a3a3;
+    letter-spacing: -1px;
+    line-height: 30px;
+}
+
+header > #logo {
+	width: 1000px;
+	text-align: center;
+	
+	margin: 0px auto;
+}
+
+header > #logo a{
+	height: 80px;
+	line-height: 80px;
+}
+
+header > #logo a:first-child img{
+	height: 36px;
+	
+	margin: 22px 0;
+}
+
+header > #logo a:last-child img{
+	height: 79px;
+}
+
+header > #menu {
+	width: 1000px;
+	
+	margin: 0px auto;
+	
+	padding-bottom: 10px;
+	
+	overflow: hidden;
+}
+
+header > #menu > div {
+	float: left;
+}
+
+header > #menu > .m_left {
+	overflow: hidden;
+}
+
+header > #menu > .m_left li {
+	float: left;
+}
+
+header > #menu > .m_left li:first-child ~ li {
+	margin-left: 20px;
+}
+
+header > #menu > .m_left li > a {
+	font-size: 16px;
+	letter-spacing: -1px;
+    color: #000000;
+}
+
+header > #menu > .m_right {
+	float: right;
+}

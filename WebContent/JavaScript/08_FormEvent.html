@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<script type="text/javascript">
+		function myFocus(obj) {	// obj=input
+			obj.value="아이디를 입력하세요.";
+		}
+		
+		function myBlur(obj) {
+			obj.value="중복되는 아이디가 있습니다.";
+		}
+		
+		function myChange(obj) {
+			alert(obj.value);
+		}
+		
+		function mySelect(obj) {
+			alert(obj.value);
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<!-- 폼 이벤트 : focus, blur, change, select, submit -->
+
+	<input type="text" onfocus="myFocus(this)" onclick="myBlur(this)"/>
+	<br/>
+	<br/>
+
+	<select onchange="myChange(this)">
+		<option value="사과">사과</option>
+		<option value="바나나">바나나</option>
+		<option value="배">배</option>
+		<option value="딸기">딸기</option>
+		<option value="메론">메론</option>
+	</select>
+	<br/>
+	<br/>
+	
+	<input type="text" value="안녕하세요. 집에 가자!!!!"/>
+
+</body>
+
+</html>

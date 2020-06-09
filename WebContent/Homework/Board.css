@@ -1,0 +1,27 @@
+@charset "UTF-8";
+#board {
+	width: 600px;
+	
+	border: solid black 3px;
+	margin: 200px auto;
+}
+
+#createform div {
+	width: 500px;
+	height: 50px;
+	
+	border: solid orange 3px;
+}
+
+#createform .index {
+	width: 100px;
+	height: 50px;
+	display: block;
+	float: left;
+	
+	border: solid red 3px;
+}
+
+.content {
+	border: solid blue 3px;
+}

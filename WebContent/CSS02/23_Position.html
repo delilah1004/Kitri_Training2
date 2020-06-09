@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		/*
+		position : static, absolute, fixed, relative
+		*/
+
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		body>div:nth-child(1) {
+			background-color: red;
+			position: absolute;		/* absolute : 부모 기준으로 절대 위치, margin과 padding 사용 못함*/
+			top: 0px;
+			left: 0px;
+		}
+
+		body>div:nth-child(2) {
+			background-color: green;
+			position: absolute;
+			
+			top: 50px;
+			left: 50px;
+		}
+
+		body>div:nth-child(3) {
+			background-color: blue;
+			position: absolute;
+			
+			top: 100px;
+			left: 100px;
+		}
+		
+		#wrap {
+			width: 300px;
+			height: 300px;
+			background-color: yellow;
+			top: 300px;
+			left: 300px;
+			position: absolute;
+		}
+		
+		#wrap > .content {
+			width: 100px;
+			height: 100px;
+			background-color: olive;
+			position: absolute;
+			top: 80px;
+			left: 80px;
+		}
+		
+		#apple {
+			width: 300px;
+			height: 300px;
+			background-color: #FEDEC4;
+			
+			margin-top: 700px;
+		}
+		
+	</style>
+	<title>POSITION</title>
+</head>
+
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+
+	<div id="wrap">
+		<div class="content"></div>
+	</div>
+	
+	<div id="apple"></div>
+</body>
+
+</html>

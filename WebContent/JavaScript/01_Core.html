@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Core</title>
+	
+	<script type="text/javascript">
+		// 자료형 (숫자, 문자(문자열), 배열, 클래스) : 데이터 자료형에 엄격하지 않다.
+		var su = 10;
+		var value = 23.5;
+		var hap = su + value;
+		var str = "자바스크립트";
+		
+		// 쌍따옴표 안에 홀따옴표 or 홀따옴표 안에 쌍따옴표로 써줘야 한다.
+		document.write("<p style='color:blue'>" + hap + "</p>");
+		document.write("<p>" + str + "</p>");
+		
+		// 조건문 (if, if~else, if~elseif, switch)
+		if(su > 20) {
+			document.write("<h3> 20보다 큰 수 입니다. </h3>");
+		} else if(su > 30) {
+			document.write("<h3> 30보다 큰 수 입니다. </h3>");
+		} else {
+			document.write("<h3> 기타등등 </h3>");	
+			// document 내장객체 : new로 객체발생을 하지 않고 사용한다.
+			// 내장함수 alert() : 예를 들어, 브라우저 객체 중에 window 객체인데 객체명조차 사용하지 않는다.
+		}
+		
+		// 반복문 (for, while, do~while)
+		for(var i=0; i<10; i++) {
+			document.write("<div> 반복합니다." + i + "</div>");
+		}
+	</script>
+	
+</head>
+<body>
+	<pre>
+		1. HTML : 웹페이지를 제작하기 위한 도구
+		2. CSS : HTML 표현(꾸며준다.) 한다.
+		3. JavaScript
+			1) HTML 통제한다.
+			2) 구성
+				- Core : 기본문법 구조 (데이터 타입, 반복문, 함수 등등)
+				- BOM(Browser Object Model) : 브라우저 관련된 객체
+				- DOM(Document Object Model) : Element 제어, Style 제어, Attribute 제어, Event 제어
+	</pre>
+
+</body>
+</html>

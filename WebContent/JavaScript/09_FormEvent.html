@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="09_FormJS.js"></script>
+</head>
+<body>
+	<form action="https://www.naver.com" method="get" onsubmit="return checkForm(this)">
+		<label>이름을 입력하세요</label>
+		<input type="text" name="irum"/>
+		<br/><br/>
+		
+		<label>이동할 사이트</label>
+		<select name="siteUrl" >
+			<option value=''></option>
+			<option value="https://www.naver.com">네이버</option>
+			<option value="https://www.daum.net">다음</option>
+			<option value="https://www.nate.com">네이트</option>
+		</select>
+		<br/><br/>
+		
+		
+		<label>좋아하는 과일을 선택하세요.</label>
+		<input type="radio" name="fruit" value="바나나"/>
+		<label>바나나</label>
+		
+		<input type="radio" name="fruit" value="사과"/>
+		<label>사과</label>
+		
+		<input type="radio" name="fruit" value="복숭아"/>
+		<label>복숭아</label>
+		
+		<input type="radio" name="fruit" value="딸기"/>
+		<label>딸기</label>
+		<br/><br/>
+		
+		
+		<label>관심사를 체크하세요.</label>
+		<input type="checkbox" name="interest" value="경제"/>
+		<label>경제</label>
+		
+		<input type="checkbox" name="interest" value="IT"/>
+		<label>IT</label>
+		
+		<input type="checkbox" name="interest" value="음악"/>
+		<label>음악</label>
+		
+		<input type="checkbox" name="interest" value="미술"/>
+		<label>미술</label>
+		
+		<input type="checkbox" name="interest" value="스포츠"/>
+		<label>스포츠</label>
+		<br/><br/>
+		
+		
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소"/>
+		
+	</form>
+</body>
+</html>

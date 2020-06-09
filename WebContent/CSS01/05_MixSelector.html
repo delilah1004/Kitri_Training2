@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>혼합 선택자</title>
+<style type="text/css">
+	font{
+	font-size :12px;
+	color:skyblue;
+	}
+	
+	.show{
+		font-size:20px;
+	}
+	
+	#disp{
+		font-size:40px;
+	}
+	#my-font{
+		font-family:궁서체
+		}
+
+</style>
+</head>
+<body>
+<!-- class와 id중의 우선순위는 id가 높다.  그러나 해당에서 자체적으로있다면 자체적인 것이 더 높다.
+	모든 태그는 스타일(style) 속성을 사용할 수 있다. 단, br은 해당하지 않는다. -->
+	<font> 연습입니다. 12px, skyblue </font><br/><br/>
+	
+	<font class="show"> 연습입니다. 20px, skyblue</font><br/><br/>
+	
+	<font id="disp"> 연습입니다. 40px, skyblue </font><br/><br/>
+	
+	<font class="show" id="my-font"> 연습입니다. 20px, 궁서체</font><br/><br/>
+	
+	<font class="show" id="disp">연습입니다. 40px, skyblue(우선순위 id가 높음)</font><br><br>
+	
+	<font class="show" id="disp" style="font-size:9px; font-family:궁서체;">연습입니다. 40px, skyblue(우선순위 id가 높음)</font>
+</body>
+</html>
+
+
+

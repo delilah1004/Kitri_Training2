@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="BoardStyle.css">
+</head>
+
+<body>
+	<div id="board">
+	
+	<div id="list">
+			<a href="https://www.naver.com/">글목록</a>
+		</div>
+	
+	<div id="createform">
+		
+		<form action="서버주소" method="post">
+
+			<div class="writer">
+
+				<label class="index">작성자</label>
+				<input class="content" type="text" name="작성자" />
+
+			</div>
+
+			<div class="title">
+
+				<label class="index">제목</label>
+				<input class="content" type="text" name="제목" />
+
+			</div>
+
+			<div class="email">
+
+				<label class="index">이메일</label>
+				<input class="content" type="text" name="이메일" />
+
+			</div>
+
+			<div class="contents">
+
+				<label class="index">내용</label>
+				<textarea class="content"></textarea>
+
+			</div>
+
+			<div class="pw">
+
+				<label class="index">비밀번호</label>
+				<input class="content" type="text" name="비밀번호" />
+
+			</div>
+
+			<div class="foot">
+				<input type="submit" value="글쓰기" />
+				<input type="reset" value="다시작성" />
+				<input type="button" value="목록보기" />
+			</div>
+
+		</form>
+	</div>
+	</div>
+</body>
+
+</html>

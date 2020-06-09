@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style type="text/css">
+/*
+		속성의 특수 문자를 통해서 데이터 뽑아내기 
+	선택자[attribute] : attribute 속성명이 있는 태그를 선택
+	선택자[attribute = valued] : attribute 속성값과 value 일치하는 태그 선택 
+	
+	선택자[attribute $= valued] : attribute 속성값과 value에 해당하는 문자가 끝나는 태그를 선택
+	선택자[attribute ^= valued] : attribute 속성값과 value에 해당하는 문자가 시작하는 태그를 선택
+	선택자[attribute *= valued] : attribute 속성값과 value에 해당하는 문자가 포함하는 태그를 선택
+	
+	선택자[attribute |= valued] : [attribute ^= valued]와 같다 /  해당하는 문자가 시작하는 태그를 선택 /declared
+	선택자[attribute ~= valued] : [attribute *= valued]와 같다 /  해당하는 문자가 포함하는 태그를 선택 /declared
+	
+	
+
+*/
+	form > input[type]{
+		font-size:20px
+	}
+
+	form > input[type="text"]{
+			color : red;
+	}
+	
+	form > input[type="password"]{
+			color : blue;
+	}
+	
+	span[id ^="complex"]{
+		color:blue
+	}
+	
+	span[id $= "text1"]{
+		font-size : 20px;
+		color:red;
+	}
+	
+	span[id *= "t"]{
+		background-color: yellow
+	}
+
+
+</style>
+</head>
+<body>
+	<form>
+		<label>이름</label>
+		<input type="text"/><br/>
+		
+		<label>아이디</label>
+		<input type="text"/><br/>
+		
+		<label>비밀번호</label>
+		<input type="password"/><br/>
+		
+		<label>전화번호</label>
+		<input type="tel"/><br/>
+	</form>
+	<br/>
+	
+	<img width="200" height="100" alt="이미지 중입니다."/>
+	<br/>
+	
+	<span id="simpletext1">simpletext1</span>
+	<span id="simpletext2">simpletext2</span>
+	<span id="complextext1">complextext1</span>
+	<span id="complextext2">complextext2</span>
+	<span id="complex">complex</span>
+	<br/><br/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

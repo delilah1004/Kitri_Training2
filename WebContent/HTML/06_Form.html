@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!-- GET 방식은 웹 브라우저 주소창으로 데이터 전달 -->
+	<!-- POST 방식은 웹 브라우저 헤더 부분을 통해 데이터 전달 -->
+	<form action="https://www.naver.com" method="get">
+	
+		<span>아이디</span> 
+		<input type="text" name="id" /> 
+		<br /><br /> 
+		
+		<span>비밀번호</span> 
+		<input type="text" name="pass" /> 
+		<br /><br /> 
+		
+		<span>이름</span> 
+		<input type="text" name="name" />
+		<br /><br />
+		
+		<span>성별</span> 
+		<input type="radio" name="gender" value="남자" />
+		<span>남자</span>
+		<input type="radio" name="gender" value="여자" />
+		<span>여자</span>
+		<br /><br />
+		
+		<!-- submit & reset 버튼은 이벤트를 포함한다. -->
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소"/>
+		<br /><br />
+		
+	</form>
+	<br /><br />
+	
+	<h3>페이지 이동</h3>
+	<ol>
+		<li>
+			<a href="https://www.naver.com">네이버 이동</a>
+		</li>
+		<li>
+			<a href="https://www.google.com">구글 이동</a>
+		</li>	
+	</ol>
+
+
+
+
+</body>
+</html>

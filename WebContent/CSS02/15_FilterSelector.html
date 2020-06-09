@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>필터 선택자 - 문자 블록 </title>
+
+	<style type="text/css">
+		#wrap {
+			width: 800px;
+			margin: 50px auto;
+		}
+		
+		#wrap > #header {
+			border-bottom: 1px solid #cccccc;
+		}
+		
+		#wrap > #footer {
+			height: 300px;
+			border: 2px solid #cccccc;
+		}
+		
+		#wrap > #footer li {
+			list-style: none;
+			float: left;
+			margin: 10px;
+		}
+		
+		#wrap > #content > p:nth-child(2):first-letter, #wrap > #content > #history2:first-letter{
+			/* 첫글자 */
+			font-size: 2em;
+		}
+		
+		#wrap > #content > p:nth-child(2):first-line, #wrap > #content > #history2:first-line{
+			/* 첫라인 */
+			font-weight: bolder;
+			color: #2160d1;
+		}
+		
+		#wrap > #content > p:nth-child(1)::selection{
+			/* 선택한문자(드래그) */
+			background-color: olive;
+			color: red;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>설립개요</h1>
+		</div>
+
+		<div id="content">
+			<p>
+				중소기업 지원업무의 전문성과 효율성을 확보하고 중소기업에 대한 기술, 경영, 인력등의 종합지원체계를 구축함으로써 중소기업의 경쟁력 제고를 위해 설립된 진흥원은 종소기업의 자생력을 키우고 안정적인 경영여건을 조성하기 위하여 끊임없이 노력하고 있습니다.
+			</p>
+			<p id="history1">
+				2014년 4월 9일
+				<br/> 진흥원 사명변경 6월3일 판교 이전
+			</p>
+			<p id="history2">
+				2013년 1월 12일
+				<br/> 다누리 시민청 개관 5월 9일 꿈꾸는 청년가게 명동점 개관 5월 10일 큐비드 광화문 개관 6월 21일 다누리 강남점 개관 7월 20일 서울크리에티브랩 개관 6월27일 다누리 성북점 개관
+			</p>
+		</div>
+
+		<div id="footer">
+			<ul>
+				<li>
+					<img src="https://cdn.iconscout.com/icon/free/png-256/naver-1-282954.png">
+				</li>
+				<li>
+					<img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="50px">
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

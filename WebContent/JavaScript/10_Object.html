@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		// 자바스크립트의 자료형은 모두 객체이다.
+		// 1. Number 객체
+		var su = 10;
+		var value = new Number(20);
+		document.write(su + "<br/>" + value + "<br/><br/>");
+		
+		var num = 123.45678;
+		document.write(num.toFixed(3)) // 소수점 3째자리까지 출력 -> 123.456
+		document.write(num.toPrecision(10)) // 숫자 10개까지 출력 0으로 채워서 출력 -> 123.4567800
+		document.write(num.toPrecision(5)) // 소수점 전 후로 숫자 5개까지 출력 -> 123.45
+		document.write(Number.MAX_VALUE + "<br/>" + Number.MIN_VALUE + "<br/><br/>");
+		
+		// Math 객체
+		document.write("절대값:" + Math.abs(-15) + "<br/>");
+		document.write("최대값:" + Math.max(10, 15, 150) + "<br/>");
+		document.write("최소값:" + Math.min(-1, -2, 0, 7) + "<br/>");
+		document.write("제곱:" + Math.pow(2, 3) + "<br/>");
+		document.write("랜덤:" + Math.random(-15) + "<br/><br/>");
+		
+		// 3. String 객체 - 문자, 문자열
+		var abc = "안녕하세요";
+		var xyz = new String("반가워요");
+		document.write(abc + "<br/>" + xyz + "<br/><br/>");
+		
+		var str = "ABCDEFGHIJ";
+		document.write(str.substring(6) + "<br/>");
+		document.write(str.substring(2,8) + "<br/><br/>");
+		
+		var email = "hong@naver.com";
+		document.write(email.toLowerCase() + "<br/>");
+		document.write(email.toUpperCase() + "<br/><br/>");
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

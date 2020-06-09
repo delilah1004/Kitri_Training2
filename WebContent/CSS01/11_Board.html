@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>스타일 시트 예제</title>
+	<style type="text/css">
+		body{
+			/*margin-top: 0px;
+			margin-left: 0px;
+			margin-right:0px;
+			margin-bottom: 0px;	*/
+			
+			/*margin: 2px; */
+			
+			/*margin: 2px 3px 4px 5px;*/
+			/*margin: 10px 5px;*/
+			margin: 10px 5px 7px; /*위 (왼쪽 오른쪽) 아래 */
+			
+		}
+		
+		div{
+			border: solid 1px red;
+			width: 400px;
+			height: 50px;
+			margin-top: 10px;
+			margin-left:50px;
+			
+			/*position: static(기본값) 순차적으로 쌓인다(겹치기 가능)*/
+			
+			text-align: right;
+		}
+		
+		#hangul >font, #alphabet >span{
+			border: solid 1px blue;
+			display: block;
+			width: 100px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			float:left;
+			
+			/*패딩은 픽셀과 같이 크기가 커진다. */
+			paddig-top: 10px;	/*글꼴 + height + padding = ??*/
+			padding-left: 10px;
+		}
+		
+		#hangul{
+			margin-left:400px;
+		}
+		
+		#alphabet{
+			margin-left:10px;
+		}
+		
+		#hangul >font{
+			margin-top: 10px;
+			border-left-width: 0px;
+		}
+		
+		#alphabet > span{
+			margin-top: 10px;
+			border-left-width: 0px;
+		}
+	
+	</style>
+	</head>
+	<body>
+		<div id="hangul">	
+			<font style="border-left-width:1px;">가</font>
+			<font>나</font>
+			<font>다</font>
+		</div>
+		<br/><br/>
+		
+		<div id="alphabet" >
+			<span style="border-left-width:1px;">AA</span>
+			<span>BB</span>
+			<span>CC</span>
+		</div>
+	</body>
+</html>

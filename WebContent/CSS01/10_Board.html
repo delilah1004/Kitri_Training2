@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선 그리기</title>
+<!-- 솔직히 br보다는 margin값으로 사용한다. -->
+<!-- 위아래 수평은height의 값과 같으면 중앙 적으면 위로 많으면 아래-->
+<!-- text-decoration은 하이퍼링크 아래 줄 없애주기 기능 -->
+<style type="text/css">
+
+	
+	  #menu > div{
+	  	border-style: solid;
+	  	border-color: #000000;
+	  	border-width: 2px;
+	  	width: 120px;
+	  	height: 30px;
+	  	
+	  	float:left;
+	  	text-align: center;
+	  	line-height: 30px;
+	  	border-right-width:0px; 
+	  	}
+
+	#alphabet > span{
+		border-style: solid;
+		border-color: #000000;
+		border-width:1px;
+		width:120px;
+		height:30px;
+		display: block;
+		text-align: center;
+		line-height: 30px;
+	}
+	
+	#num > font{
+		border-style:solid;
+		border-color:#000000;
+		border-width: 1px;
+		width: 120px;
+		height:30px;
+		display: block;
+		text-align: center;
+		line-height: 30px;
+		float: right;
+		border-right-width:0px;
+
+	}
+	
+	#site > a {
+		border:solid #000000 1px;
+		display:block;
+		width: 120px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		float: left;
+		border-right-width:0px;
+		text-decoration: none;
+	}
+	
+	a:link{
+	/*아직 방문을 하지 않은 경우*/
+		color: blue;
+	
+	}
+	a:hover{
+	/*마우스를 올려 놓았을 때 //가장 많이 쓰인다.*/
+		color:yellow;
+	}
+	a:visited{
+	/*한번 이상 방문했을 때*/
+		color:red;
+	}
+	a:active{
+	/*마우스를 클릭했을때//요즘잘 안쓰인다...*/
+	}
+
+
+
+</style>
+</head>
+<body>
+	<div id="menu">
+		<div>뉴스</div>
+		<div>까페</div>
+		<div>블로그</div>
+		<div style="border-right-width:2px;">메일</div>
+	</div>	
+	<br/><br/><br/><br/>
+	
+	
+	<div id="alphabet">
+		<span>A</span>
+		<span style="border-top-width:0px;">B</span>
+	</div>
+	<br/><br/><br/><br/>
+	
+	
+	<div id="num">	
+		<font style="border-right-width:1px;">1</font>
+		<font>2</font>
+		<font>3</font>
+	</div>
+	<br/><br/><br/><br/>
+	
+	
+	<div id="site">
+		<a href="http://www.naver.com">네이버</a>
+		<a href="http://www.google.co.kr">구글</a>
+		<a href="http://www.daum.net" style="border-right-width:1px;">다음</a>
+	</div>	
+</body>
+</html>

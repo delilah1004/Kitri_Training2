@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선 그리기</title>
+<!-- 인라인은 선긋기가 안된다.
+	 인라인을 선긋기 해주고 싶다면 블록으로 바꿔주면 된다.   -->
+
+<style type ="text/css">
+	font{
+		font-size:18px;
+		font-family: 맑은 고딕;
+	}
+
+	.myBorder{
+		border-style: solid;
+		border-width: 5px;
+		border-color: red;
+		background-color: yellow;
+		
+	}
+	
+	.myBorderStyle{
+		border-top-style:dotted;
+		border-top-width: 2px;
+		border-top-color: red;
+		
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-right-color: olive;
+		
+		border-bottom-style: double;
+		border-bottom-width: 2px;
+		border-bottom-color: gray;
+		
+		border-left-style: dashed;
+		border-left-width: 2px;
+		border-left-color: purple;
+	}
+	
+	.apple{
+		border-style:solid;
+		border-width: 2px;
+		width:200px;
+		height: 100px;
+		
+	}
+	.banana{
+		border-style:solid;
+		border-width: 2px;
+		width:200px;
+		height: 100px;
+		display: block;
+	}
+
+
+</style>
+
+</head>
+<body>
+	<font>연습입니다.</font>
+	<br/><br/>
+	
+	<font class="myBorder">연습입니다.</font>
+	<br/><br/>
+	
+	<font class="myBorderStyle">연습입니다.</font>
+	<br/><br/>
+	
+	
+	
+	<font class="apple">연습입니다.</font><br><br>
+	<font class="banana">연습입니다.</font><br><br>
+	
+	<span class="apple">연습입니다.</span><br><br>
+	
+	<div class="apple">연습입니다.</div>
+	
+	
+	
+	
+</body>
+</html>

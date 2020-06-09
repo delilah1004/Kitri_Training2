@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>단위</title>
+	
+	<style type="text/css">
+		/* 
+		CSS 단위 : 100%, 16px, 1.0em 
+		URL 단위
+		*/
+		
+		#wrap {
+			width: 800px;
+			height: 1000px;
+			margin: 0px auto;
+			border: 1px solid #cccccc;
+		}
+		
+		#wrap > #content1 {
+			width: 80%;
+			height: 50%;
+			border: 1px solid red;
+			
+			background-image: url("./../img/dress.jpg");
+			background-size: 50%;
+			/* background-repeat: no-repeat; */
+			
+			font-size: 2em;
+			color: red;
+			font-weight: bolder;
+			text-align: center;
+			line-height: 500px;
+		}
+		
+		#wrap > #content2 {
+			width: 500px;
+			height: 230px;
+			
+			margin: 20px auto;
+			
+			border: 1px solid red;
+			
+			background-image: url("http://www.kitri.re.kr/static/images/kitri/common/h_logo.png");
+			
+			font-size: 1.5em;
+			color: red;
+			font-weight: bolder;
+			text-align: center;
+			line-height: 230px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!-- 이미지, 오디오, 비디오 : 상대 경로 또는 이미지 주소(URL) 복사 -->
+    <div id="wrap">
+        <div id="content1">해당 이미지는 저작권 보호를 받습니다.</div>
+        <div id="content2">해당 이미지는 저작권 보호를 받습니다.</div>
+        <div id="content3">해당 이미지는 저작권 보호를 받습니다.</div>
+    </div>
+</body>
+</html>

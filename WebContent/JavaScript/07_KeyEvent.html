@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<script type="text/javascript">
+		function myFun1(obj) {
+			obj.style.color = "red";
+		}
+		
+		function myFun2() {
+			alert("KeyUp");
+		}
+		
+		function myFun3() {
+			alert("KeyDown");
+		}
+	</script>
+
+</head>
+
+<body>
+	<!-- 키 이벤트 : keypress(keydown, keyup) -->
+
+	<input type="text" onkeypress="myFun1(this)" />
+	<br/>
+	<br/>
+
+	<input type="text" onkeypress="myFun2()" />
+	<br/>
+	<br/>
+
+	<input type="text" onkeypress="myFun3()" />
+	<br/>
+	<br/>
+
+</body>
+
+</html>

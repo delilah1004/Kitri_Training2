@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+#header {
+	width: 100%;
+}
+
+#header > .black_top {
+	width: 100%;
+	background-color: #353535;
+}
+
+#header > .black_top > ul {
+	width: 860px;
+	height: 30px;
+	
+	margin: 0px auto;
+}
+
+#header > .black_top > ul > li {
+	float: left;
+	
+	margin-left: 40px;
+	font-size: 0.9em;
+}
+
+#header > .black_top a {
+	color: white;
+}
+
+#header > .title {
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	
+	border: 1px solid #cccccc;
+	
+	margin: 70px auto;
+}
+
+#header > .hit_menu > ul {
+	width: 800px;
+	
+	margin: 0px auto;
+	
+	overflow: hidden;
+}
+
+#header > .hit_menu > ul {
+	width: 800px;
+	
+	margin: 0px auto;
+	
+	overflow: hidden;
+}
+
+#header > .hit_menu > ul > li {
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	
+	border: 1px solid #cccccc;
+	border-left-width: 0px;
+	
+	float: right;
+}
+
+/* hit1 */
+#header > .hit_menu > ul > li:last-child { 
+	border-radius: 10px 0px 0px 10px;
+	border-left-width: 1px;
+}
+
+/* hit4 */
+#header > .hit_menu > ul > li:first-child { 
+	border-radius: 0px 10px 10px 0px;
+}
+
+#header > .hit_menu > ul > li > a {
+	color: black;
+}
+
+#header > .basic_menu {	
+	border: #cccccc solid 1px;
+	border-style: dashed none solid none;
+	
+	margin-top: 50px;
+}
+
+#header > .basic_menu > ul {
+	width: 750px;
+	
+	margin: 0px auto;
+	
+	overflow: hidden;
+}
+
+#header > .basic_menu > ul > li {
+	width: 80px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	
+	margin-left: 10px;
+	
+	float: left;
+}
+
+#header > .basic_menu > ul > li > a {
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

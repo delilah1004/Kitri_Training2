@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*공통*/
+
+body {
+	font-size: 12px;
+}
+
+/*헤드*/
+#h3BHead {
+	width: 800px;
+	text-align: center;
+}
+
+#dvHeadRow {
+	width: 800px;
+	height: 25px;
+	background: #f99;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+#dvNo,
+.dvNo {
+	float: left;
+	width: 50px;
+}
+#dvTitle {
+	float: left;
+	width: 496px;
+}
+
+#dvWriter,
+.dvWriter {
+	float: left;
+	width: 100px;
+}
+#dvDate,
+.dvDate {
+	float: left;
+	width: 100px;
+}
+#dvCount {
+	float: left;
+	width: 50px;
+	margin-top: 5px;
+}
+
+/**/
+#dvNo,
+#dvTitle,
+#dvDate,
+#dvWriter {
+	border-right-style: solid;
+	border-right-color: #ccc;
+	border-right-width: 1px;
+	margin-top: 5px;
+}
+
+/*바디*/
+.dvCount {
+	float: left;
+	width: 50px;
+}
+.dvRow {
+	width: 800px;
+	height: 20px;
+	background: #ff0;
+}
+.dvNo {
+	border-left-style: solid;
+	border-left-color: #ccc;
+	border-left-width: 1px;
+}
+
+.dvNo,
+.dvTitle,
+.dvWriter,
+.dvDate,
+.dvCount {
+	border-right-style: solid;
+	border-right-color: #666;
+	border-right-width: 1px;
+	padding-top: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #ccc;
+}
+
+.dvNo,
+.dvDate,
+.dvWriter,
+.dvCount {
+	text-align: center;
+}
+
+.dvTitle {
+	float: left;
+	width: 484px;
+	padding-left: 10px;
+}
+
+/*버텀*/
+#dvBottom {
+	clear: both;
+	width: 800px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+/*link*/
+
+a {
+	color: #333;
+}
+
+a:link {
+	font-size: 12px;
+	font-family: 굴림;
+	text-decoration: none;
+}
+
+a:visited {
+	font-size: 12px;
+	color: #333;
+	font-family: 굴림;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	font-size: 13px;
+	font-family: 궁서;
+}

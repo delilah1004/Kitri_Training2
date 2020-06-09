@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<script type="text/javascript">
+		function checkForm(obj) {
+			if(obj.buho.value!='+' & obj.buho.value!='-' & obj.buho.value!='*' & obj.buho.value!='/') {
+				alert("부호를 잘못 입력하셨습니다."); // window 생략가능
+				obj.buho.focus();
+				return false;				 // false 리턴하면 데이터가 넘어가지 않는다.
+			}
+			
+			if(obj.buho.value=='/') {
+				if(obj.value.value==0) {
+					alert("0으로 나눌 수 없습니다.");
+					obj.value.focus();
+					return false;
+				}
+			}
+		}
+	</script>
+	
+</head>
+<body>
+
+	<form action="http://localhost:8181/webTesting/com/java/servlet/Example05" method="post" onsubmit="return checkForm(this)">
+		<label>수</label>
+		<input type="text" name="su">
+		<br><br>
+		
+		<label>부호</label>
+		<input type="text" name="buho">
+		<br><br>
+		
+		<label>수</label>
+		<input type="text" name="value">
+		<br><br>
+		
+		<input type="submit" value="전송">
+		<input type="reset" value="취소">	
+	</form>
+
+</body>
+</html>

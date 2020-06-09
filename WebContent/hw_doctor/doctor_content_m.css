@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#content > #poster {
+	height: 636px;
+	
+	background-color: #f0f0f0;
+	
+	text-align: center;
+}
+
+#content > #m_con {
+	width: 1180px;
+	
+	padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+	
+	margin: 0px auto;
+	
+	overflow: hidden
+}
+
+#content > #m_con > .title {
+	width: 100%;
+	
+	margin: 0px auto;
+	
+	padding-bottom: 28px;
+	
+	overflow: hidden;
+}
+
+#content > #m_con > .title > div:first-child {
+	width: 620px;
+	
+	float: left;
+}
+
+#content > #m_con > .title > div > h3:last-child {
+	margin-left: 28px;
+}
+
+#content > #m_con > div {
+	overflow: hidden;
+}
+
+#content > #m_con > div > div {
+	float: left;
+}
+
+#content > #m_con .mc_left > div{	
+	width:620px;
+	height: 450px;
+}
+
+#content > #m_con .mc_left > div > a > img{
+	width: 590px;
+	height: 328px;
+}
+
+#content > #m_con .mc_left > div > span{
+	display: block;
+	margin-top: 20px;
+	font-size: 1.2em;
+}
+
+#content > #m_con .empty > .line {
+	position: absolute;
+	width: 2px;
+	height: 450px;
+	
+	background-color: #eeeeee;
+}
+
+#content > #m_con .mc_right > div {
+	margin-left: 28px;
+}
+
+#content > #m_con .mc_right > .contents {
+	overflow: hidden;
+}
+
+#content > #m_con .mc_right > .contents > div {
+	width: 256px;
+	height: 217px;
+	
+	float: left;
+}
+
+#content > #m_con .mc_right > .contents > div > img {
+	width: 100%;
+	height: 144px;
+	
+	padding-right: 10px;
+}
+
+#content > #m_con .mc_right > .contents > div > span {
+	display: block;
+	
+	padding-left: 10px;
+	margin-top: 10px;
+	
+	font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    letter-spacing: -1px;
+}

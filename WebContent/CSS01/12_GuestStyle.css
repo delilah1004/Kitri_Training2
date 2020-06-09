@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+	#createforom{
+		border: solid 0px red;
+		width: 400px;
+		height: 230px;
+		
+		
+		margin: 300px auto;
+	}
+	
+	#createforom .title{
+		border: solid 0px blue;
+		width: 400px;
+		height: 25px;
+		margin:5px 0px;
+		
+		text-align: center;
+		line-height: 23px;
+	}
+	#createforom .content{
+		border: solid 0px yellow;
+		width: 400px; height: 160px;
+	}

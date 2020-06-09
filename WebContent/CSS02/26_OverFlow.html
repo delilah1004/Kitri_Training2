@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OverFlow</title>
+	<style type="text/css">
+		
+		#row1 {
+			width: 500px;
+			margin: 0px auto;
+			border: 3px solid #FFC3AF;	/* height 생략시 자식 height에 맞춰준다. */
+		}
+		
+		#row1 > #first {
+			width: 100px;
+			height: 100px;
+			margin: 5px;
+			border: 2px solid #DEC3BF;
+		}
+		
+		#row1 > #second {
+			width: 100px;
+			height: 200px;
+			margin: 5px;
+			border: 2px solid #DEC3BF;
+		}
+		
+		#row2 {
+			width: 500px;
+			
+			margin: 0px auto;
+			border: 3px solid #99ccff;
+			
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		
+		#row2 > #first, #row2 > #second {
+			width: 100px;
+			height: 100px;
+			margin: 5px;
+			border: 2px solid #DEC3BF;
+			
+			float: right;
+		}
+		
+	</style>
+</head>
+<body>
+    <div id="row1">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+
+    <div id="row2">
+        <div id="first">first</div>
+        <div id="second">second</div>
+    </div>
+</body>
+</html>

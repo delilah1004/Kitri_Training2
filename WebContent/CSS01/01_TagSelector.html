@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>스타일 시트 예제 (Cascading 캐스케이딩 Style Sheet)</title>
+	<Style type="text/css">
+		/*선택자: 태그를 선택, 기본선택자(Tag,Class,id)
+		   스타일: 태그를 꾸며준다.*/
+		font, span{
+			font-size: 25px;	/*(디폴트값)16px,100%,1.0em*/
+			color: aqua;
+		
+		}
+		
+		span{
+			color:red;			
+			font-family: 궁서체;
+		}
+		p{
+			font-size:200%
+			}
+		div{
+			line-height:100px;		/*문자열 간격*/
+			}	
+			
+	</Style>
+
+</head>
+<body>
+	<font>안녕하세요.</font><br/><br/>
+	<font>반갑습니다.</font><br/><br/>
+	
+	<span>여름입니다.</span><br/><br/>
+	<span>겨울입니다.</span><br/><br/>
+	
+	<p>가을입니다.</p>
+	<p>봄입니다.</p>
+	
+	<div>사과</div>
+	<div>바나나</div>
+	<div>딸기</div>
+</body>
+</html>
