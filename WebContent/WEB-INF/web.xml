@@ -1,138 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>webTesting</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-  <!-- Example01 파일 -->
-  <servlet>
-  	<servlet-name>Example01</servlet-name>
-  	<servlet-class>com.java.servlet.Example01</servlet-class>
-  </servlet>
-   	
-  <servlet-mapping>
-  	<servlet-name>Example01</servlet-name>
-  	<url-pattern>/com/java/servlet/Example01</url-pattern>
-  </servlet-mapping>
-  
-  
-  <!-- Example02 파일 -->
-  <servlet>
-  	<servlet-name>Example02</servlet-name>
-  	<servlet-class>com.java.servlet.Example02</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example02</servlet-name>
-  	<url-pattern>/com/java/servlet/Example02</url-pattern>
-  </servlet-mapping>
-  
-  <!-- Example03 파일 -->
-   <servlet>
-  	<servlet-name>Example03</servlet-name>
-  	<servlet-class>com.java.servlet.Example03</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example03</servlet-name>
-  	<url-pattern>/com/java/servlet/Example03</url-pattern>
-  </servlet-mapping>
-  
-  <!-- Example04 -->
-  <servlet>
-    <servlet-name>Example04</servlet-name>
-    <servlet-class>com.java.servlet.Example04</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example04</servlet-name>
-  	<url-pattern>/com/java/servlet/Example04</url-pattern>
-  </servlet-mapping>
-  
-  
-   <!-- Example05 -->
-  <servlet>
-    <servlet-name>Example05</servlet-name>
-    <servlet-class>com.java.servlet.Example05</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example05</servlet-name>
-  	<url-pattern>/com/java/servlet/Example05</url-pattern>
-  </servlet-mapping>
-  
-     <!-- Example06 -->
-  <servlet>
-    <servlet-name>Example06</servlet-name>
-    <servlet-class>com.java.servlet.Example06</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example06</servlet-name>
-  	<url-pattern>/com/java/servlet/Example06</url-pattern>
-  </servlet-mapping>
-  
-     <!-- Example07 -->
-  <servlet>
-    <servlet-name>Example07</servlet-name>
-    <servlet-class>com.java.servlet.Example07</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example07</servlet-name>
-  	<url-pattern>/com/java/servlet/Example07</url-pattern>
-  </servlet-mapping>
-  
-       <!-- Example07_Success -->
-  <servlet>
-    <servlet-name>Example07_Success</servlet-name>
-    <servlet-class>com.java.servlet.Example07_Success</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example07_Success</servlet-name>
-  	<url-pattern>/com/java/servlet/Example07_Success</url-pattern>
-  </servlet-mapping>
-  
-       <!-- Example07_Fail -->
-  <servlet>
-    <servlet-name>Example07_Fail</servlet-name>
-    <servlet-class>com.java.servlet.Example07_Fail</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example07_Fail</servlet-name>
-  	<url-pattern>/com/java/servlet/Example07_Fail</url-pattern>
-  </servlet-mapping>
-  
-       <!-- Example08 -->
-  <servlet>
-  	<servlet-name>Example08</servlet-name>
-  	<servlet-class>com.java.servlet.Example08</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example08</servlet-name>
-  	<url-pattern>/com/java/servlet/Example08</url-pattern>
-  </servlet-mapping>
-  
-       <!-- Example08_Sub -->
-  <servlet>
-  	<servlet-name>Example08_Sub</servlet-name>
-  	<servlet-class>com.java.servlet.Example08_Sub</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>Example08_Sub</servlet-name>
-  	<url-pattern>/com/java/servlet/Example08_Sub</url-pattern>
-  </servlet-mapping>
-  
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>webTesting</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Example01 파일 -->
+	<servlet>
+		<servlet-name>Example01</servlet-name>
+		<servlet-class>com.java.servlet.Example01</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example01</servlet-name>
+		<url-pattern>/com/java/servlet/Example01</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Example02 파일 -->
+	<servlet>
+		<servlet-name>Example02</servlet-name>
+		<servlet-class>com.java.servlet.Example02</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example02</servlet-name>
+		<url-pattern>/com/java/servlet/Example02</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example03 파일 -->
+	<servlet>
+		<servlet-name>Example03</servlet-name>
+		<servlet-class>com.java.servlet.Example03</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example03</servlet-name>
+		<url-pattern>/com/java/servlet/Example03</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example04 -->
+	<servlet>
+		<servlet-name>Example04</servlet-name>
+		<servlet-class>com.java.servlet.Example04</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example04</servlet-name>
+		<url-pattern>/com/java/servlet/Example04</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Example05 -->
+	<servlet>
+		<servlet-name>Example05</servlet-name>
+		<servlet-class>com.java.servlet.Example05</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example05</servlet-name>
+		<url-pattern>/com/java/servlet/Example05</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example06 -->
+	<servlet>
+		<servlet-name>Example06</servlet-name>
+		<servlet-class>com.java.servlet.Example06</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example06</servlet-name>
+		<url-pattern>/com/java/servlet/Example06</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example07 -->
+	<servlet>
+		<servlet-name>Example07</servlet-name>
+		<servlet-class>com.java.servlet.Example07</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example07</servlet-name>
+		<url-pattern>/com/java/servlet/Example07</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example07_Success -->
+	<servlet>
+		<servlet-name>Example07_Success</servlet-name>
+		<servlet-class>com.java.servlet.Example07_Success</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example07_Success</servlet-name>
+		<url-pattern>/com/java/servlet/Example07_Success</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example07_Fail -->
+	<servlet>
+		<servlet-name>Example07_Fail</servlet-name>
+		<servlet-class>com.java.servlet.Example07_Fail</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example07_Fail</servlet-name>
+		<url-pattern>/com/java/servlet/Example07_Fail</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example08 -->
+	<servlet>
+		<servlet-name>Example08</servlet-name>
+		<servlet-class>com.java.servlet.Example08</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example08</servlet-name>
+		<url-pattern>/com/java/servlet/Example08</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example08_Sub -->
+	<servlet>
+		<servlet-name>Example08_Sub</servlet-name>
+		<servlet-class>com.java.servlet.Example08_Sub</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example08_Sub</servlet-name>
+		<url-pattern>/com/java/servlet/Example08_Sub</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example09_CookieSet -->
+	<servlet>
+		<servlet-name>Example09_CookieSet</servlet-name>
+		<servlet-class>com.java.servlet.Example09_CookieSet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example09_CookieSet</servlet-name>
+		<url-pattern>/com/java/servlet/Example09_CookieSet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example09_CookieGet -->
+	<servlet>
+		<servlet-name>Example09_CookieGet</servlet-name>
+		<servlet-class>com.java.servlet.Example09_CookieGet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example09_CookieGet</servlet-name>
+		<url-pattern>/com/java/servlet/Example09_CookieGet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example09_CookieDel -->
+	<servlet>
+		<servlet-name>Example09_CookieDel</servlet-name>
+		<servlet-class>com.java.servlet.Example09_CookieDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example09_CookieDel</servlet-name>
+		<url-pattern>/com/java/servlet/Example09_CookieDel</url-pattern>
+	</servlet-mapping>
+
+	<!-- Example10_SessionSet -->
+	<servlet>
+		<servlet-name>Example10_SessionSet</servlet-name>
+		<servlet-class>com.java.servlet.Example10_SessionSet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example10_SessionSet</servlet-name>
+		<url-pattern>/com/java/servlet/Example10_SessionSet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Example10_SessionGet -->
+	<servlet>
+		<servlet-name>Example10_SessionGet</servlet-name>
+		<servlet-class>com.java.servlet.Example10_SessionGet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example10_SessionGet</servlet-name>
+		<url-pattern>/com/java/servlet/Example10_SessionGet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Example10_SessionDel -->
+	<servlet>
+		<servlet-name>Example10_SessionDel</servlet-name>
+		<servlet-class>com.java.servlet.Example10_SessionDel</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Example10_SessionDel</servlet-name>
+		<url-pattern>/com/java/servlet/Example10_SessionDel</url-pattern>
+	</servlet-mapping>
+
 </web-app>
 
 

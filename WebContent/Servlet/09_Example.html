@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 장바구니 저장 -->
+	<form action="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieSet" method="get">
+	
+		<table>
+			<tr>
+				<td><img src="./../img/img1.png" height="200"/></td>
+				<td><img src="./../img/dinosaur.jpg" height="200"/></td>
+				<td><img src="./../img/img3.png" height="200"/></td>
+			</tr>
+			
+			<tr>
+				<td align="center">
+					<input type="checkbox" name="image" value="img1">아보카도
+				</td>
+				<td align="center">
+					<input type="checkbox" name="image" value="img2">공룡
+				</td>
+				<td align="center">
+					<input type="checkbox" name="image" value="img3">아임그루트
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3" align="center">
+					<input type="submit" value="장바구니에 추가"/>
+					<input type="reset" value="취소"/>
+				</td>
+			</tr>
+			
+		</table>
+		
+	</form>
+	<br/><br/>
+	
+	<div>
+		<a href="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieGet">장바구니 보기</a>
+		<br/><br/>
+		<a href="http://localhost:8181/webTesting/com/java/servlet/Example09_CookieDel">장바구니 삭제</a>
+	</div>
+
+</body>
+</html>

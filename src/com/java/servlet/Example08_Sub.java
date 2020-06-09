@@ -50,6 +50,9 @@ public class Example08_Sub extends HttpServlet {
 		
 		out.print("</body>");
 		out.print("</html>");
+		
+		// out.close();
+		// close()를 하면 include 방식에서는 스트림이 닫혀서 출력이 되지 않는다. forward에서는 다시 돌아가지 않기 때문에 사용 가능
 	}
 
 	/**

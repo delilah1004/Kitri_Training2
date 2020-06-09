@@ -33,7 +33,7 @@ public class Example01 extends HttpServlet {
 	}
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("★☆서블릿 내용 doGet 함수입니다.");
+		System.out.println("★☆ 서블릿 내용 doGet 함수입니다.");
 	}
 	
 	// 소멸
