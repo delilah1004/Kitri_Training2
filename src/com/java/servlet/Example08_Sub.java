@@ -32,6 +32,9 @@ public class Example08_Sub extends HttpServlet {
 		
 		request.setCharacterEncoding("utf-8");
 		String message = request.getParameter("message");
+		String name = (String) request.getAttribute("name");
+		String phone = (String) request.getAttribute("phone");
+		
 		System.out.println("Exmaple08_Sub" + message);
 		
 		response.setContentType("text/html;charset=utf-8");
@@ -42,6 +45,9 @@ public class Example08_Sub extends HttpServlet {
 		out.print("<body>");
 		
 		out.print("<h3 style='color:blue'>" + message + "<h3/>");
+		out.print("<h3 style='color:blue'>" + name + "<h3/>");
+		out.print("<h3 style='color:blue'>" + phone + "<h3/>");		
+		
 		out.print("</body>");
 		out.print("</html>");
 	}
